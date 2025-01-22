@@ -20,7 +20,8 @@ def fs(n):
     if n < 2:
         s+='1'
         return 1
-    s+=str(n)+'*'
+    s+=f'{n}*'
     return n*fs(n-1)
 s=''
-print(fs(5),s)
+rs=fs(5)
+print(f'{s}={rs}')
