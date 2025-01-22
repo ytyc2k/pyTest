@@ -5,10 +5,22 @@
 def factorial(n):
     if n < 0:
         raise ValueError("n must be a non-negative integer")
-    if n<2:
+    if n < 2:
         return 1
     return n * factorial(n - 1)
 
 # 示例
 number = 5
 print(f"{number}! = {factorial(number)}")
+
+def fs(n):
+    global s
+    if n < 0:
+        raise ValueError("n must be a non-negative integer")
+    if n < 2:
+        s+='1'
+        return 1
+    s+=str(n)+'*'
+    return n*fs(n-1)
+s=''
+print(fs(5),s)
