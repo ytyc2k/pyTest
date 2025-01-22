@@ -1,0 +1,2 @@
+1.函数括号自动补全
+pylance-->settings-->"python.analysis.completeFunctionParens": true (点钩)
